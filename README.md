@@ -1,58 +1,49 @@
-# Redbus Data Scraping with Selenium & Dynamic Filtering using Streamlit
+Redbus Data Scraping with Selenium & Dynamic Filtering using Streamlit
+Project Overview
+This project automates the extraction of transportation data from the Redbus website using Selenium, stores the data in a MySQL database, and visualizes it through a Streamlit application. The aim is to simplify data collection, enhance analysis, and improve decision-making in the transportation industry.
 
-## Project Overview
-This project involves scraping transportation data from the Redbus website using Selenium and storing the extracted data in a MySQL database. The data is then visualized and dynamically filtered using a Streamlit application.
+Table of Contents
+Skills Takeaway
+Problem Statement
+Approach
+Technical Tags
+Data Source
+Required Fields
+Project Files Overview
+Skills Takeaway
+Python Programming
+Web Scraping using Selenium
+MySQL Database Management for Data Storage and Retrieval
+Streamlit Development
+Data Visualization with Streamlit
+Pandas for Data Handling
+Problem Statement
+The "Redbus Data Scraping and Filtering with Streamlit Application" project seeks to streamline the collection, analysis, and visualization of bus travel data from Redbus. Utilizing Selenium for automated web scraping, the project extracts comprehensive details such as bus routes, schedules, prices, and seat availability. This tool aims to enhance data management and strategic planning in the transportation sector.
 
-## Table of Contents
-- [Skills Takeaway](#skills-takeaway)
-- [Problem Statement](#problem-statement)
-- [Approach](#approach)
-- [Technical Tags](#technical-tags)
-- [Data Source](#data-source)
-- [Required Fields](#required-fields)
-- [Project Files Overview](#project-files-overview)
+Approach
+Data Scraping
+Use Selenium to extract bus travel data from the Redbus website, including routes, schedules, prices, and seat availability.
+Data Storage
+Store the scraped data in a MySQL database to enable efficient querying and management.
+Streamlit Application
+Develop a Streamlit app to visualize and filter the scraped data. Implement features to filter by bus type, route, price range, star rating, and availability.
+Data Analysis and Filtering
+Use SQL queries to retrieve and filter data based on user inputs, and provide interactive data exploration through the Streamlit application.
+Data Source
+Data is collected from the Redbus website. The scraping targets bus routes, schedules, pricing information, and seat availability.
 
-## Skills Takeaway
-- Python Programming
-- Web Scraping using Selenium
-- MySQL DBMS for Data Storage and Retrieval
-- Streamlit Development
-- Data Visualization using Streamlit
-
-## Problem Statement
-The "Redbus Data Scraping and Filtering with Streamlit Application" project aims to simplify the collection, analysis, and visualization of bus travel data. By using Selenium for web scraping, this project automatically extracts detailed information from the Redbus website, such as bus routes, schedules, prices, and seat availability. The goal is to make data collection easier and provide tools for better decision-making, helping improve efficiency and planning in the transportation industry.
-
-## Approach
-
-### Data Scraping
-Utilize Selenium to automate the extraction of Redbus data, including routes, schedules, prices, and seat availability.
-
-### Data Storage
-Store the scraped data in a SQL database for efficient querying and data management.
-
-### Streamlit Application
-Develop a Streamlit application to display and filter the scraped data. Implement various filters such as bus type, route, price range, star rating, and availability.
-
-### Data Analysis and Filtering
-Use SQL queries to retrieve and filter data based on user inputs. Utilize Streamlit to allow users to interact with and filter the data through the application.
-
-## Data Source
-Data is scraped from the [Redbus website](https://www.redbus.in/).
-
-## Required Fields
-- Bus Routes Link
-- Bus Route Name
-- Bus Name
-- Bus Type (Sleeper/Seater)
-- Departing Time
-- Duration
-- Reaching Time
-- Star Rating
-- Price
-- Seat Availability
-
-## Project Files Overview
-- **`red_bus_scraping.ipynb`**: Jupyter Notebook with the Selenium script used to scrape bus data from the Redbus website.
-- **`sql_script.ipynb`**: Jupyter Notebook containing the SQL script for storing the scraped data into a MySQL database.
-- **`streamlit_app.py`**: Python script for a Streamlit application that visualizes and allows dynamic filtering of the scraped data.
-
+Required Fields
+Bus Routes Link: URL of the bus route
+Bus Route Name: Name of the bus route
+Bus Name: Name of the bus
+Bus Type: Type of bus (e.g., Sleeper, Seater)
+Departing Time: Time the bus departs
+Duration: Duration of the journey
+Reaching Time: Time the bus reaches its destination
+Star Rating: Rating of the bus
+Price: Ticket price
+Seat Availability: Number of available seats
+Project Files Overview
+red_bus_scraping.ipynb: Jupyter Notebook containing the Selenium script for scraping bus data from Redbus.
+sql_script.ipynb: Jupyter Notebook with SQL commands for storing scraped data in a MySQL database.
+streamlit_app.py: Python script for a Streamlit application that visualizes and allows dynamic filtering of the data.
